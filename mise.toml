@@ -4,3 +4,16 @@ python.github_attestations = false
 
 [tools]
 python = "3.10.12"
+
+[tasks.flake8]
+description = "Run flake8 (default: whole repo)"
+run = "uv run flake8 --extend-exclude .venv"
+
+[tasks.mypy]
+description = "Run mypy (default: whole repo)"
+usage = 'arg "[path]..." default="."'
+run = 'uv run mypy {{usage.path | join(sep=" ")}}'
+
+[tasks.check]
+description = "Run flake8 and mypy"
+depends = ["flake8", "mypy"]
