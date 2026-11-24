@@ -9,3 +9,6 @@ dev = [
     "flake8>=7.4.1",
     "mypy>=2.4.1",
 ]
+
+[tool.mypy]
+python_version = "3.10"
