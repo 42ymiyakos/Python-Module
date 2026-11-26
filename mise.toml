@@ -1,9 +1,5 @@
-[settings]
-# python-build-standalone の古いビルド (3.10.12) には GitHub artifact attestations がないため
-python.github_attestations = false
-
 [tools]
-python = "3.10.12"
+python = "3.15.2"
 
 [tasks.flake8]
 description = "Run flake8 (default: whole repo)"
