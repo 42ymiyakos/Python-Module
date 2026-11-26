@@ -1,6 +1,10 @@
 [tools]
 python = "3.15.2"
 
+[tasks.python]
+description = "Run Python with the given arguments"
+run = "python"
+
 [tasks.flake8]
 description = "Run flake8 (default: whole repo)"
 run = "uv run flake8"
